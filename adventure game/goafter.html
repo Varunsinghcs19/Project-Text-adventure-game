@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+        }
+    .bedroom{
+       
+        height: 500px;
+        width: 900px;
+    }
+
+    .container {
+        color: white;
+    width: 650px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px gray;
+    font-family: cursive;
+    font-size: 20px;
+    position: absolute;
+    top: 485px;
+    left: 190px;
+  }
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: hsl(180, 5%, 8%);
+    border: 1px solid hsl(0, 0%, 1%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(253, 249, 249);
+    outline: none;
+    font-size: 17px;
+    font-family: cursive;
+    text-decoration: none;
+  }
+  .btn:hover {
+    color: rgb(26, 89, 197);
+    text-shadow: rgb(46, 45, 45);
+  }
+  #scene{
+      background-image: url(images/equipment2.jpg);
+      background-repeat: no-repeat;
+      width: 1060px;
+      height: 700px;
+    position: absolute;
+    left: 230px;
+    top: 20px;
+ 
+  }
+  @keyframes fadeIn{
+      from{opacity: 0;}
+      to{opacity: 1;}
+  }
+  #Flashlight{
+ 
+      position: absolute;
+      left: 40px;
+      top: 100px;
+      height: 300px;
+      width: 300px;
+      opacity: 0;
+      
+  }
+  #Flashlight:hover{
+      background-color: rgba(0, 0, 0, 0.5);
+      background-image: url(images/flashoption.png);
+      background-repeat: no-repeat;
+      opacity: 1;
+  }
+ #Gun{
+     position: absolute;
+     left: 370px ;
+     top: 100px;
+     height: 300px;
+     width: 300px;
+     opacity: 0;
+ }
+ #Gun:hover{
+     background-color: rgba(0, 0, 0, 0.5);
+     background-image: url(images/GunOption.png);
+     background-repeat: no-repeat;
+     opacity: 1;
+ }
+ #Baseball{
+     position: absolute;
+     left: 700px;
+     top: 100px;
+     height: 300px;
+     width: 300px;
+     opacity: 0;
+ }
+ #Baseball:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  
+
+ }
+    </style>
+   
+    
+        <div id="scene">
+            <a href="Flashlight.html" id="Flashlight">  <img src="images/flashoption.png"> </a>
+            <a href="Gun.html" id="Gun"> <img src="images/GunOption.png"> </a>
+            <a href="baseballbat.html" id="Baseball"> <img src="images/Batoption.png" > </a>
+            <div class="container"> You decided to go after your Dog, You must take something with you that might be helpful. What will you take?(Hover over image to see options.)
+              
+                    
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>

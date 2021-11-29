@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+        }
+    .bedroom{
+       
+        height: 500px;
+        width: 900px;
+    }
+
+    .container {
+        color: white;
+    width: 650px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px gray;
+    font-family: cursive;
+    font-size: 20px;
+    position: absolute;
+    top: 545px;
+    left: 190px;
+  }
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: hsl(180, 5%, 8%);
+    border: 1px solid hsl(0, 0%, 1%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(253, 249, 249);
+    outline: none;
+    font-size: 17px;
+    font-family: cursive;
+    text-decoration: none;
+  }
+  .btn:hover {
+    color: rgb(26, 89, 197);
+    text-shadow: rgb(46, 45, 45);
+  }
+  #scene{
+      background-image: url(images/Bedroom\ \(1\).jpg);
+      width: 1131px;
+      height: 700px;
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    animation: fadeIn 4s;
+  }
+  @keyframes fadeIn{
+      from{opacity: 0;}
+      to{opacity: 1;}
+  }
+ 
+    </style>
+   
+    
+        <div id="scene">
+            <div class="container"> You woken are up at the middle of night by a strange noise.
+                <div id="option button" class="btn-grid">
+                    <a href="Dogcall.html" class="btn">Call for your dog</a>
+                    <a href="window.html" class="btn">Investigate the noise</a>
+                    
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
